@@ -1,18 +1,29 @@
 .images-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 10px;
-    width: 50%;
+    column-gap: 24px;
+    width: 70%;
     margin: 0 auto;
+}
+
+.images-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
 }
 
 .image {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .image img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
 }
