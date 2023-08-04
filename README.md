@@ -18,6 +18,7 @@ Welcome to Duckery, an image sharing app that only allow users to post images of
 
 Contributions are welcome! If you find any bugs or have suggestions for new features, please open an issue or submit a pull request.
 Main are contributers are: Amine Boukhris, Seif Telmini, Yassine Gafsaui
+for now seif is still not here
 
 ## Acknowledgements
 
