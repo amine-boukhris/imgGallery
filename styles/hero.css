@@ -1,0 +1,88 @@
+.hero{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../imgs/batta.jpg);
+
+    position: relative;
+    color: black;
+    padding: 8rem 0;
+    margin-bottom: 2rem; 
+}
+
+.hero__content{
+    width: 60%;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.hero__title{
+    font-size: var(--size-5xl);
+    font-weight: bold;
+}
+.hero__subtitle{
+    /* display: block; */
+    font-size: var(--size-lg);
+}
+
+.hero__search-bar{
+    background-color: white;
+    width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    display: flex;
+    gap: 0.4rem;
+    border: 1px solid #94a3b879;
+    transition: all 0.15s ease-in;
+}
+
+.hero__search-bar-input {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.hero__search-bar:hover,
+.hero__search-bar:active {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-1px);
+}
+
+.hero__credits {
+    position: absolute;
+    left: 18px;
+    bottom: 15px;
+    font-size: var(--size-base);
+    color: var(--clr-slate600);
+}
+.hero__repo {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 15px;
+    font-size: var(--size-base);
+    color: var(--clr-slate600);
+}
+
+.hero__credits a,
+.hero__repo a {
+    text-decoration: none;
+}
+
+.hero__credits a:hover,
+.hero__repo a:hover {
+    text-decoration: underline;
+}
+
+.hero__search-button i,
+.hero__image-search-button i{
+    color: var(--clr-slate600);
+}
+
+.hero__search-button i:hover,
+.hero__image-search-button i:hover {
+    color: black;
+}
