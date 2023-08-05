@@ -1,91 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="./styles/modern-normalize.css">
-  <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/galery.css" />
-  <link rel="stylesheet" href="./styles/hero.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <section class="hero">
-    <div class="hero__content">
-      <h1 class="hero__title">DuckShare</h1>
-      <p class="hero__subtitle">
-        Share you favorite <strong>Duck</strong> images <br> with people around the world
-      </p>
-      <div class="hero__search-bar">
-        <button class="hero__search-button">
-          <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-          <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" colors="primary:#121331"
-            style="height:26px">
-          </lord-icon>
-        </button>
-        <input type="text" placeholder="Search highly-resolution images" class="hero__search-bar-input">
-        <button class="hero__image-search-button">
-          <i class="fa-solid fa-camera"></i>
-        </button>
-      </div>
-    </div>
-
-    <p class="hero__credits">
-      Photo by
-      <a href="https://unsplash.com/photos/LhqLdDPcSV8" target=”_blank”>Timothy Dykes</a>
-      on
-      <a href="https://unsplash.com" target=”_blank”>unsplash</a>
-    </p>
-    <p class="hero__repo">
-      visit the <a href="https://github.com/amine-boukhris/imgGallery" target=”_blank”>repository on github</a>
-    </p>
-  </section>
-
-  <div class="images-grid">
-    <div class="images-column images-column1">
-      <div class="image">
-        <img src="imgs/img14.jpg" alt="will get image description from php">
-      </div>
-      <div class="image">
-        <img src="imgs/img9.jpg" alt="will get image description from php">
-      </div>
-      <div class="image">
-        <img src="imgs/img8.jpg" alt="will get image description from php">
-      </div>
-    </div>
-    <div class="images-column images-column2">
-      <div class="image">
-        <img src="imgs/img12.jpg" alt="will get image description from php">
-      </div>
-      <div class="image">
-        <img src="imgs/img7.jpg" alt="will get image description from php">
-      </div>
-      <div class="image">
-        <img src="imgs/img16.jpg" alt="will get image description from php">
-      </div>
-      <div class="image">
-        <img src="imgs/img1.jpg" alt="will get image description from php">
-      </div>
-    </div>
-    <div class="images-column images-column3">
-      <div class="image">
-        <img src="imgs/img13.jpg" alt="will get image description from php">
-      </div>
-      <div class="image">
-        <img src="imgs/img15.jpg" alt="will get image description from php">
-      </div>
-      <div class="image">
-        <img src="imgs/img4.jpg" alt="will get image description from php">
-      </div>
-    </div>
-  </div>
-  <footer>All credits for Photos to <a href="https://unsplash.com/">Unsplash</a></footer>
-</body>
-
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles/modern-normalize.css">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/galery.css" />
+        <link rel="stylesheet" href="./styles/header.css" />
+        <link rel="stylesheet" href="./styles/hero.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    </head>
+    <body>
+      <header class="header">
+        <div class="header__title">
+          <i class="fa-solid fa-list header__menu-icon"></i>
+          <h1 class="header__logo">Duckshare</h1>
+        </div>
+  
+        <div class="header__search-bar">
+          <div class="header__search-input">
+            <input placeholder="Search" />
+          </div>
+          <button class="header__search-button">
+            <i class="fa-solid fa-search"></i>
+          </button>
+        </div>
+  
+        <div class="header__nav">
+          <i class="fa-solid fa-circle-plus header__upload-img"></i>
+          <i class="fa-solid fa-bell header__nav-notifications"></i>
+          <div class="header__profile-img">
+            <img src="imgs/profile-img.jpg" />
+          </div>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">DuckShare</h1>
+          <p class="hero__subtitle">
+            Share you favorite <strong>Duck</strong> images <br> with people around the world
+          </p>
+          <div class="hero__search-bar">
+            <button class="hero__search-button">
+              <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+              <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" trigger="hover" colors="primary:#121331"
+                style="height:26px">
+              </lord-icon>
+            </button>
+            <input type="text" placeholder="Search highly-resolution images" class="hero__search-bar-input">
+            <button class="hero__image-search-button">
+              <i class="fa-solid fa-camera"></i>
+            </button>
+          </div>
+        </div>
+    
+        <p class="hero__credits">
+          Photo by
+          <a href="https://unsplash.com/photos/LhqLdDPcSV8" target=”_blank”>Timothy Dykes</a>
+          on
+          <a href="https://unsplash.com" target=”_blank”>unsplash</a>
+        </p>
+        <p class="hero__repo">
+          visit the <a href="https://github.com/amine-boukhris/imgGallery" target=”_blank”>repository on github</a>
+        </p>
+      </section>
+        <div class="images-grid">
+            <div class="images-column images-column1">
+                <div class="image">
+                    <img src="imgs/img14.jpg" alt="will get image description from php">
+                </div>
+                <div class="image">
+                    <img src="imgs/img9.jpg" alt="will get image description from php">
+                </div>
+                <div class="image">
+                    <img src="imgs/img8.jpg" alt="will get image description from php">
+                </div>
+            </div>
+            <div class="images-column images-column2">
+                <div class="image">
+                    <img src="imgs/img12.jpg" alt="will get image description from php">
+                </div>
+                <div class="image">
+                    <img src="imgs/img7.jpg" alt="will get image description from php">
+                </div>
+                <div class="image">
+                    <img src="imgs/img16.jpg" alt="will get image description from php">
+                </div>
+                <div class="image">
+                    <img src="imgs/img1.jpg" alt="will get image description from php">
+                </div>
+            </div>
+            <div class="images-column images-column3">
+                <div class="image">
+                    <img src="imgs/img13.jpg" alt="will get image description from php">
+                </div>
+                <div class="image">
+                    <img src="imgs/img15.jpg" alt="will get image description from php">
+                </div>
+                <div class="image">
+                    <img src="imgs/img4.jpg" alt="will get image description from php">
+                </div>
+            </div>
+        </div>
+        <footer>All credits for Photos to <a href="https://unsplash.com/">Unsplash</a></footer>
+    </body>
 </html>
