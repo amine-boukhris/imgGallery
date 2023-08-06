@@ -19,14 +19,18 @@ const imageSchema = mongoose.Schema(
       type: String,
       required: true
     },
-    likes: {
-      type: Array,
-      required: true
-    },
-    saves: {
-      type: Array,
-      required: true
-    }
+    likes: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User"
+      }
+    ],
+    saves: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User"
+      }
+    ]
   },
   {
     timestamps: true
